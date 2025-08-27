@@ -12,6 +12,7 @@ export default defineConfig(({ mode }) => ({
       allow: ["./client", "./shared"],
       deny: [".env", ".env.*", "*.{crt,pem}", "**/.git/**", "server/**"],
     },
+    allowedHosts: ["map-ibbf.onrender.com"],
   },
   build: {
     outDir: "dist/spa",
