@@ -18,7 +18,7 @@ export function createServer() {
   app.use(express.urlencoded({ extended: true }));
 
   // Connect to MongoDB once per server process
-  const mongoUri = process.env.MONGODB_URI || "mongodb://localhost:27017/MAP";
+  const mongoUri = process.env.MONGODB_URI || "mongodb+srv://souhardyagayen99:7et0EOecfnL5GUqx@cluster0.4lmrord.mongodb.net/MAP";
   if (!mongoose.connection.readyState) {
     mongoose
       .connect(mongoUri, { dbName: process.env.MONGODB_DBNAME })
